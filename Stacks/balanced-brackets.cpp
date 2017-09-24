@@ -23,7 +23,7 @@ string isBalanced(string s) {
             default: break;
         }
         i++;
-    } while (i <= s.size() - 1 || !myStack.empty()); // If were at the end of the string
+    } while (i <= s.size() - 1); // If were at the end of the string
     if (myStack.empty()) return "YES";
     else return "NO";
 }
